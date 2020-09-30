@@ -5,10 +5,11 @@ function binary_Search(items, value) {
 
     while(items[middleIndex] != value && firstIndex < lastIndex) {
        if (value < items[middleIndex]) {
-            lastIndex = middleIndex - 1;
-        } else if (value > items[middleIndex]) {
-            firstIndex = middleIndex + 1;
-        }
+	lastIndex = middleIndex - 1;
+       }
+       else if (value > items[middleIndex]) {
+	 firstIndex = middleIndex + 1;
+       }
         middleIndex = Math.floor((lastIndex + firstIndex)/2);
     }
 
